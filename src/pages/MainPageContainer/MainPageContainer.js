@@ -25,10 +25,10 @@ export const MainPageContainer = () => {
   const { photoListLiked, status: likedFetchStatus } = useSelector(
     photoActionsSelectors.selectLikedPhotos
   );
-  console.log(likedFetchStatus);
-  useEffect(() => {
-    dispatch(pushListLikedPhotos());
-  }, [location.pathname]);
+
+  // useEffect(() => {
+  //   dispatch(pushListLikedPhotos());
+  // }, [location.pathname]);
 
   const onScroll = () => {
     dispatch(pushPhoto(query));
