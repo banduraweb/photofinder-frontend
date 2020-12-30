@@ -37,7 +37,7 @@ function* photoApiWorker({ payload }) {
     yield put(setCountPage());
   } catch (e) {
     yield put(pushPhoto.failure());
-    // Notification.error(e?.response?.data?.error || 'Something went wrong...');
+     Notification.error(e?.response?.data?.error || 'Something went wrong...');
   }
 }
 
