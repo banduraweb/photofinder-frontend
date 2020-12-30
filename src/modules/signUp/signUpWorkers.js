@@ -31,7 +31,7 @@ function* signUpWorker() {
     }
   } catch (e) {
     yield put(pushSignUp.failure());
-    // Notification.error(e?.response?.data?.error);
+    Notification.error(e?.response?.data?.error);
   }
 }
 
