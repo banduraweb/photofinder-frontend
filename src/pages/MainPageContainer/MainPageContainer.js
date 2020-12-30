@@ -26,9 +26,9 @@ export const MainPageContainer = () => {
     photoActionsSelectors.selectLikedPhotos
   );
 
-  // useEffect(() => {
-  //   dispatch(pushListLikedPhotos());
-  // }, [location.pathname]);
+  useEffect(() => {
+    dispatch(pushListLikedPhotos());
+  }, [location.pathname]);
 
   const onScroll = () => {
     dispatch(pushPhoto(query));
