@@ -51,7 +51,7 @@ function* photoToglerLikerWorker({ payload }) {
     yield put(pushListLikedPhotos.success());
   } catch (e) {
     yield put(pushListLikedPhotos.failure());
-    // Notification.error(e?.response?.data?.error || 'Something went wrong...');
+     Notification.error(e?.response?.data?.error || 'Something went wrong...');
   }
 }
 
