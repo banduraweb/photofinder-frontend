@@ -11,7 +11,7 @@ function* keywordsWorker() {
     yield put(pushKeyworsList.success());
   } catch (e) {
     yield put(pushKeyworsList.failure());
-     Notification.error(e?.response?.data?.error || 'Something went wrong...');
+    Notification.error(e?.response?.data?.error || 'Something went wrong...');
   }
 }
 
