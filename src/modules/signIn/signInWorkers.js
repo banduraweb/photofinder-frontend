@@ -41,7 +41,7 @@ function* loginWorker() {
     }
   } catch (e) {
     yield put(pushSignIn.failure());
-    // Notification.error(e?.response?.data?.error);
+     Notification.error(e?.response?.data?.error);
   }
 }
 
