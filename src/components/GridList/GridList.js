@@ -61,7 +61,7 @@ export const GridListBar = ({
       <InfiniteScroll
         dataLength={photoList.length}
         next={onScroll}
-        hasMore={!isMyLikesPage || (!isMyLikesPage && !query)}
+        hasMore={!isMyLikesPage && !!query}
         loader={
           <div className={classes.root}>
             {loading
